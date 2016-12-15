@@ -420,7 +420,7 @@ footer .white a {
 }
 .category-icon #power-tools #button {
     transform: scale(1,1);
-    transform-origin: 100%;
+    transform-origin: 69px 100%;
     transition: transform 200ms ease-in-out;
 }
 .category-icon:hover #power-tools .bit {
@@ -428,7 +428,7 @@ footer .white a {
 }
 @keyframes drillbit {
     from {transform: translate(0,0);}
-    to {transform: translate(-84%,0);}
+    to {transform: translate(-8px,0);}
 }
 
 /* Hand Tools */
@@ -456,13 +456,56 @@ footer .white a {
     transform: rotate(-45deg) scale(.8);
 }
 .category-icon #hand-tools .wrench {
-    transform-origin: 81% 39%;
+    transform-origin: 76% 21%;
     transform: rotate(0deg) scale(1);
     transition: transform 500ms cubic-bezier(0.08, 0.76, 0, 1.85);
 }
 .category-icon:hover #hand-tools .wrench {
     transform: rotate(45deg) scale(.8);
 }
+
+
+
+/* Fasteners */
+.category-icon #fasteners .cls-1 {
+    fill: white;
+}
+.category-icon #fasteners .cls-2 {
+    clip-path: url(#fastener-clip-path);
+}
+.category-icon #fasteners .cls-3 {
+    fill: #231f20;
+}
+.category-icon #fasteners .cls-4 {
+    fill: #6b696a;
+}
+.category-icon #fasteners .cls-5 {
+    fill: #ff5722;
+}
+.category-icon #fasteners #head-turned {
+    opacity: 0;
+    transition: opacity 70ms ease;
+}
+.category-icon:hover #fasteners #head-turned {
+    opacity: 1;
+}
+.category-icon #fasteners #head {
+    transform: rotate3d(1,-1,0,0deg);
+    transform-origin: 50% 50%;
+    transition: transform 100ms ease;
+}
+.category-icon:hover #fasteners #head {
+    transform: rotate3d(1,-1,0,90deg);
+}
+.category-icon #fasteners .bit {
+    transform: translate(0px,0px);
+    transform-origin: 50% 50%;
+    transition: transform 100ms ease;
+}
+.category-icon:hover #fasteners .bit {
+    transform: translate(-12px,12px);
+}
+
 
 /* Metal Working */
 .category-icon #metal-working .cls-1 {
@@ -485,13 +528,12 @@ footer .white a {
 .category-icon:hover #metal-working #saw {
     transform: rotate(-360deg);
 }
-
 .category-icon #metal-working .spark {
     fill: #FF5722;
     opacity: 0;
     transform: scale(2) translate(0,0);
     transition: 25ms transform ease-out, 1ms opacity linear;
-    transform-origin: 100%;
+    transform-origin: 100% 82%;
 }
 .category-icon #metal-working .spark:nth-of-type(2) {
     transition: 285ms transform .1s ease-out, 1ms opacity .1s linear;
@@ -539,45 +581,8 @@ footer .white a {
 }
 
 
-/* Fasteners */
-.category-icon #fasteners .cls-1 {
-    fill: none;
-}
-.category-icon #fasteners .cls-2 {
-    clip-path: url(#fastener-clip-path);
-}
-.category-icon #fasteners .cls-3 {
-    fill: #231f20;
-}
-.category-icon #fasteners .cls-4 {
-    fill: #6b696a;
-}
-.category-icon #fasteners .cls-5 {
-    fill: #ff5722;
-}
-.category-icon #fasteners #head-turned {
-    opacity: 0;
-    transition: opacity 70ms ease;
-}
-.category-icon:hover #fasteners #head-turned {
-    opacity: 1;
-}
-.category-icon #fasteners #head {
-    transform: rotate3d(1,-1,0,0deg);
-    transform-origin: 50% 50%;
-    transition: transform 100ms ease;
-}
-.category-icon:hover #fasteners #head {
-    transform: rotate3d(1,-1,0,90deg);
-}
-.category-icon #fasteners .bit {
-    transform: translate(0px,0px);
-    transform-origin: 50% 50%;
-    transition: transform 100ms ease;
-}
-.category-icon:hover #fasteners .bit {
-    transform: translate(-12px,12px);
-}
+
+
 
 .featured-products {
     text-align: center;
