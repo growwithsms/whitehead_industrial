@@ -1,17 +1,29 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Whitehead Industrial</title>
     <meta name="description" content="Whitehead Home Page Example">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1e7bc0">
+    <meta name="theme-color" content="#1e7bc0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/flickity.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
     <link rel="stylesheet" href="css/whitehead-styles.css">
+
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -84,7 +96,7 @@
 
     <!-- Main "Banner" Slider -->
     <div class="hero-carousel">
-      <div class="hero-carousel-cell jumbotron" style="background-image: url(img/slide-bg.jpg);">
+      <div class="hero-carousel-cell jumbotron value-slide" style="background-image: url(img/slide-bg.jpg);">
         <div class="container">
           <div class="row">
               <div class="col-md-9">
@@ -95,14 +107,29 @@
           </div>
         </div>
       </div>
-      <div class="hero-carousel-cell jumbotron" style="background-image: url(img/slide-bg.jpg);">
+      <div class="hero-carousel-cell jumbotron blog-slide" style="background-color: #0A4672; background-image: url(img/slide-blog-bg.png); background-size: contain; background-position: bottom right;">
         <div class="container">
           <div class="row">
-              <div class="col-md-9">
-                  <h1>Industrial Supply With Superior Service <span>&amp;</span> Inventory</h1>
-                  <h3>Serving Industry, Construction, and Government Municipalities.</h3>
-                  <p><a class="btn btn-primary btn-lg" href="#" role="button">Shop By Category <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a> <a class="btn btn-default btn-lg" href="#" role="button">Shop By Brand <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+              <div class="col-md-12">
+                <a href="#"><img src="img/slide-blog-text.png" alt="Check out our latest blog post"></a>
               </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-carousel-cell jumbotron promo-slide" style="background-image: url(img/slide-promo-bg.jpg); background-color: #fff; background-position: left center; background-size: auto 100%;">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-5 col-sm-offset-3">
+                <a href="#"><img src="img/slide-promo-text.png" alt="18V Cordless Impact Wrench"></a>
+              </div>
+              <div class="col-sm-4">
+                <a href="#"><img src="img/slide-promo-drill.png" alt="Dewalt Cordless Wrench"></a>
+              </div>
+          </div>
+          <div class="row" style="margin-top: 1em;">
+            <div class="col-md-12">
+              <a href="#"><img src="img/slide-promo-sale.png"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -115,30 +142,30 @@
           <div class="col-sm-6 col-md-3">
               <div class="category-icon">
                   <svg id="power-tools" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="85" viewBox="0 0 105.22 82.16">
-				  <defs>
-				    <clipPath id="drill-clip-path" transform="translate(5.22)">
-				      <polygon fill="white" id="bit-mask" class="cls-1" points="43.35 11 0.18 11 0.18 15.57 38.79 15.57 43.35 11"/>
-				    </clipPath>
-				  </defs>
-				  <title>Power Tools</title>
-				  <g id="drill-bit">
-				    <g class="cls-2">
-				      <polygon id="bit" class="bit cls-3" points="44.58 11 38.98 11 34.41 15.57 40.01 15.57 44.58 11"/>
-				      <polygon id="bit-2" data-name="bit" class="bit cls-3" points="35.58 11 29.98 11 25.41 15.57 31.01 15.57 35.58 11"/>
-				      <polygon id="bit-3" data-name="bit" class="bit cls-3" points="17 15.57 22.61 15.57 27.17 11 21.57 11 17 15.57"/>
-				      <polygon id="bit-4" data-name="bit" class="bit cls-3" points="18.58 11 12.97 11 8.41 15.57 14.01 15.57 18.58 11"/>
-				      <polygon id="bit-5" data-name="bit" class="bit cls-3" points="0 15.57 5.61 15.57 10.17 11 4.57 11 0 15.57"/>
-				    </g>
-				  </g>
-				  <g>
-				    <path d="M72.61,62.32A3.84,3.84,0,0,0,70.91,56c-1.08-.32-1.07-.27-.29-1.08a3.86,3.86,0,0,0-1.71-6.37c-1.07-.31-1.06-.26-.29-1.07A3.85,3.85,0,0,0,67,41.08V26.57H49.56V0H82.83V26.57l9.58,35.75Z" transform="translate(5.22)"/>
-				    <path class="cls-4" d="M72.61,62.32A3.84,3.84,0,0,0,70.91,56c-1.08-.32-1.07-.27-.29-1.08a3.86,3.86,0,0,0-1.71-6.37c-1.07-.31-1.06-.26-.29-1.07A3.85,3.85,0,0,0,67,41.08V26.57H49.56V0H82.83V26.57l9.58,35.75Z" transform="translate(5.22)"/>
-				  </g>
-				  <polygon id="mount" class="cls-4" points="32.38 10.67 32.38 15.9 39.8 23.32 50.48 23.32 50.48 3.25 39.8 3.25 32.38 10.67"/>
-				  <path id="back" class="cls-4" d="M87.9,0h0a8,8,0,0,1,8,8V18.55a8,8,0,0,1-8,8h0Z" transform="translate(5.22)"/>
-				  <path id="base" class="cls-4" d="M100,67.85v9.4a4.9,4.9,0,0,1-4.9,4.9H68.53a4.9,4.9,0,0,1-4.9-4.9v-9.4Z" transform="translate(5.22)"/>
-				  <rect id="button" class="cls-5" x="62.46" y="30" width="6.47" height="5.62"/>
-				</svg>
+          				  <defs>
+          				    <clipPath id="drill-clip-path" transform="translate(5.22)">
+          				      <polygon fill="white" id="bit-mask" class="cls-1" points="43.35 11 0.18 11 0.18 15.57 38.79 15.57 43.35 11"/>
+          				    </clipPath>
+          				  </defs>
+          				  <title>Power Tools</title>
+          				  <g id="drill-bit">
+          				    <g class="cls-2">
+          				      <polygon id="bit" class="bit cls-3" points="44.58 11 38.98 11 34.41 15.57 40.01 15.57 44.58 11"/>
+          				      <polygon id="bit-2" data-name="bit" class="bit cls-3" points="35.58 11 29.98 11 25.41 15.57 31.01 15.57 35.58 11"/>
+          				      <polygon id="bit-3" data-name="bit" class="bit cls-3" points="17 15.57 22.61 15.57 27.17 11 21.57 11 17 15.57"/>
+          				      <polygon id="bit-4" data-name="bit" class="bit cls-3" points="18.58 11 12.97 11 8.41 15.57 14.01 15.57 18.58 11"/>
+          				      <polygon id="bit-5" data-name="bit" class="bit cls-3" points="0 15.57 5.61 15.57 10.17 11 4.57 11 0 15.57"/>
+          				    </g>
+          				  </g>
+          				  <g>
+          				    <path d="M72.61,62.32A3.84,3.84,0,0,0,70.91,56c-1.08-.32-1.07-.27-.29-1.08a3.86,3.86,0,0,0-1.71-6.37c-1.07-.31-1.06-.26-.29-1.07A3.85,3.85,0,0,0,67,41.08V26.57H49.56V0H82.83V26.57l9.58,35.75Z" transform="translate(5.22)"/>
+          				    <path class="cls-4" d="M72.61,62.32A3.84,3.84,0,0,0,70.91,56c-1.08-.32-1.07-.27-.29-1.08a3.86,3.86,0,0,0-1.71-6.37c-1.07-.31-1.06-.26-.29-1.07A3.85,3.85,0,0,0,67,41.08V26.57H49.56V0H82.83V26.57l9.58,35.75Z" transform="translate(5.22)"/>
+          				  </g>
+          				  <polygon id="mount" class="cls-4" points="32.38 10.67 32.38 15.9 39.8 23.32 50.48 23.32 50.48 3.25 39.8 3.25 32.38 10.67"/>
+          				  <path id="back" class="cls-4" d="M87.9,0h0a8,8,0,0,1,8,8V18.55a8,8,0,0,1-8,8h0Z" transform="translate(5.22)"/>
+          				  <path id="base" class="cls-4" d="M100,67.85v9.4a4.9,4.9,0,0,1-4.9,4.9H68.53a4.9,4.9,0,0,1-4.9-4.9v-9.4Z" transform="translate(5.22)"/>
+          				  <rect id="button" class="cls-5" x="62.46" y="30" width="6.47" height="5.62"/>
+          				</svg>
 
                   <h2>Power Tools</h2>
                   <a href="#" role="button" class="fill-parent"></a>
@@ -146,68 +173,67 @@
           </div>
           <div class="col-sm-6 col-md-3">
               <div class="category-icon">
-				<svg id="hand-tools" data-name="hand-tools" xmlns="http://www.w3.org/2000/svg" width="100" height="85" viewBox="0 0 104.12 92.29">
-				  <defs>
-				  </defs>
-				  <title>Hand Tools</title>
-				  <path id="hammer" class="cls-1" d="M91.24,78.62l-4.47,4.46a5.41,5.41,0,0,1-7.65,0L57.93,61.89,27.24,31.19l-9.08,9.07a3.43,3.43,0,0,1-4.85,0L1,28a3.42,3.42,0,0,1,0-4.85l18-18a9.49,9.49,0,0,1,5.85-2.42h24c3.79,0,4.69,2.17,2,4.85L39.34,19.08,69.45,49.19,91.23,71A5.4,5.4,0,0,1,91.24,78.62Z" transform="translate(0.12 4)"/>
-				  <g>
-				    <path class="wrench cls-2" d="M25.73,86.29a11.9,11.9,0,0,1-12-12,13.9,13.9,0,0,1,4.74-10.32L62,24.46A20.44,20.44,0,0,1,81.57-2l.95,0A3,3,0,0,1,85.32-.16a3.07,3.07,0,0,1-.88,3.29l-9.25,9.25,2.63,9.8,9.81,2.63,9.24-9.25a3.29,3.29,0,0,1,2.33-1.06,2.85,2.85,0,0,1,2.78,3A20.43,20.43,0,0,1,81.56,38.88h0a20.43,20.43,0,0,1-6-.9L36,81.56A13.88,13.88,0,0,1,25.73,86.29Zm.24-17a4.76,4.76,0,1,0,3.36,1.39A4.75,4.75,0,0,0,26,69.27Z" transform="translate(0.12 4)"/>
-				    <path class="wrench cls-3" d="M81.56,0l.86,0c1.15.06,1.42.88.6,1.7L73,11.79l3.23,12,12,3.23L98.28,17a1.38,1.38,0,0,1,.92-.47c.43,0,.75.37.78,1.08A18.46,18.46,0,0,1,75,35.67L34.56,80.22a11.92,11.92,0,0,1-8.83,4.07,9.9,9.9,0,0,1-10-10,11.91,11.91,0,0,1,4.07-8.83L64.34,25.06A18.44,18.44,0,0,1,81.56,0M26,80.8a6.76,6.76,0,1,0-4.78-2,6.75,6.75,0,0,0,4.78,2M81.56-4h0a22.44,22.44,0,0,0-21.8,27.81L17.09,62.47a15.89,15.89,0,0,0-5.38,11.79,13.9,13.9,0,0,0,14,14,15.89,15.89,0,0,0,11.81-5.41L76.2,40.24A22.44,22.44,0,0,0,104,17.4a4.83,4.83,0,0,0-4.78-4.9,5.33,5.33,0,0,0-3.73,1.62L87,22.58l-7.58-2-2-7.57,8.44-8.44A5.07,5.07,0,0,0,87.19-.87,5,5,0,0,0,82.63-4L81.56-4ZM26,76.8a2.76,2.76,0,1,1,2-4.72,2.78,2.78,0,0,1,0,3.91,2.75,2.75,0,0,1-2,.81Z" transform="translate(0.12 4)"/>
-				  </g>
-				</svg>
-
-                  <h2>Hand Tools</h2>
-                  <a href="#" role="button" class="fill-parent"></a>
+        				<svg id="hand-tools" data-name="hand-tools" xmlns="http://www.w3.org/2000/svg" width="100" height="85" viewBox="0 0 104.12 92.29">
+        				  <defs>
+        				  </defs>
+        				  <title>Hand Tools</title>
+        				  <path id="hammer" class="cls-1" d="M91.24,78.62l-4.47,4.46a5.41,5.41,0,0,1-7.65,0L57.93,61.89,27.24,31.19l-9.08,9.07a3.43,3.43,0,0,1-4.85,0L1,28a3.42,3.42,0,0,1,0-4.85l18-18a9.49,9.49,0,0,1,5.85-2.42h24c3.79,0,4.69,2.17,2,4.85L39.34,19.08,69.45,49.19,91.23,71A5.4,5.4,0,0,1,91.24,78.62Z" transform="translate(0.12 4)"/>
+        				  <g>
+        				    <path class="wrench cls-2" d="M25.73,86.29a11.9,11.9,0,0,1-12-12,13.9,13.9,0,0,1,4.74-10.32L62,24.46A20.44,20.44,0,0,1,81.57-2l.95,0A3,3,0,0,1,85.32-.16a3.07,3.07,0,0,1-.88,3.29l-9.25,9.25,2.63,9.8,9.81,2.63,9.24-9.25a3.29,3.29,0,0,1,2.33-1.06,2.85,2.85,0,0,1,2.78,3A20.43,20.43,0,0,1,81.56,38.88h0a20.43,20.43,0,0,1-6-.9L36,81.56A13.88,13.88,0,0,1,25.73,86.29Zm.24-17a4.76,4.76,0,1,0,3.36,1.39A4.75,4.75,0,0,0,26,69.27Z" transform="translate(0.12 4)"/>
+        				    <path class="wrench cls-3" d="M81.56,0l.86,0c1.15.06,1.42.88.6,1.7L73,11.79l3.23,12,12,3.23L98.28,17a1.38,1.38,0,0,1,.92-.47c.43,0,.75.37.78,1.08A18.46,18.46,0,0,1,75,35.67L34.56,80.22a11.92,11.92,0,0,1-8.83,4.07,9.9,9.9,0,0,1-10-10,11.91,11.91,0,0,1,4.07-8.83L64.34,25.06A18.44,18.44,0,0,1,81.56,0M26,80.8a6.76,6.76,0,1,0-4.78-2,6.75,6.75,0,0,0,4.78,2M81.56-4h0a22.44,22.44,0,0,0-21.8,27.81L17.09,62.47a15.89,15.89,0,0,0-5.38,11.79,13.9,13.9,0,0,0,14,14,15.89,15.89,0,0,0,11.81-5.41L76.2,40.24A22.44,22.44,0,0,0,104,17.4a4.83,4.83,0,0,0-4.78-4.9,5.33,5.33,0,0,0-3.73,1.62L87,22.58l-7.58-2-2-7.57,8.44-8.44A5.07,5.07,0,0,0,87.19-.87,5,5,0,0,0,82.63-4L81.56-4ZM26,76.8a2.76,2.76,0,1,1,2-4.72,2.78,2.78,0,0,1,0,3.91,2.75,2.75,0,0,1-2,.81Z" transform="translate(0.12 4)"/>
+        				  </g>
+        				</svg>
+                <h2>Hand Tools</h2>
+                <a href="#" role="button" class="fill-parent"></a>
               </div>
           </div>
           <div class="col-sm-6 col-md-3">
               <div class="category-icon">
-				<svg id="fasteners" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 100.08 100">
-				  <defs>
-				    <clipPath id="fastener-clip-path" transform="translate(0.08)">
-				      <polygon fill="white" id="mask" class="cls-1" points="18.86 93.75 64.86 47.76 44.96 42.42 6.31 81.08 18.86 93.75"/>
-				    </clipPath>
-				  </defs>
-				  <title>Fasteners</title>
-				  <g id="fastener-bit">
-				    <g class="cls-2">
-				      <polygon id="dark" class="bit cls-3" points="0 87.4 19.9 92.73 26.75 85.88 6.85 80.55 0 87.4"/>
-				      <polygon id="light" class="bit cls-4" points="11.91 75.56 31.8 80.89 38.66 74.03 18.76 68.7 11.91 75.56"/>
-				      <polygon id="dark-2" data-name="dark" class="bit cls-3" points="23.28 64.18 43.18 69.51 50.03 62.66 30.14 57.33 23.28 64.18"/>
-				      <polygon id="light-2" data-name="light" class="bit cls-4" points="34.66 52.8 54.55 58.13 61.41 51.28 41.51 45.95 34.66 52.8"/>
-				      <polygon id="dark-3" data-name="dark" class="bit cls-3" points="46.28 41.18 66.18 46.51 73.03 39.66 53.13 34.33 46.28 41.18"/>
-				    </g>
-				    <polygon id="top" class="cls-3" points="64.93 47.76 81.99 30.7 69.37 18.09 45.04 42.42 64.93 47.76"/>
-				    <polygon id="tip" class="cls-4" points="0.08 100 6.38 81.08 18.99 93.69 0.08 100"/>
-				  </g>
-				  <path id="head-inner" class="cls-5" d="M93.85,16.08A7.95,7.95,0,1,1,84,5.89a7.72,7.72,0,0,0-.44,2.6,8,8,0,0,0,8,8A7.58,7.58,0,0,0,93.85,16.08Z" transform="translate(0.08)"/>
-				  <path id="head" class="cls-3" d="M96.89,8.77,85,20.7,79.3,15,91.23,3.11A19.26,19.26,0,0,0,67.12,5.63L94.37,32.88A19.26,19.26,0,0,0,96.89,8.77Z" transform="translate(0.08)"/>
-				  <path id="head-turned" class="cls-3" d="M91.23,3.11A19.26,19.26,0,0,0,67.12,5.63L94.37,32.88A19.26,19.26,0,0,0,96.89,8.77Z" transform="translate(0.08)"/>
-				</svg>
+          				<svg id="fasteners" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 100.08 100">
+          				  <defs>
+          				    <clipPath id="fastener-clip-path" transform="translate(0.08)">
+          				      <polygon fill="white" id="mask" class="cls-1" points="18.86 93.75 64.86 47.76 44.96 42.42 6.31 81.08 18.86 93.75"/>
+          				    </clipPath>
+          				  </defs>
+          				  <title>Fasteners</title>
+          				  <g id="fastener-bit">
+          				    <g class="cls-2">
+          				      <polygon id="dark" class="bit cls-3" points="0 87.4 19.9 92.73 26.75 85.88 6.85 80.55 0 87.4"/>
+          				      <polygon id="light" class="bit cls-4" points="11.91 75.56 31.8 80.89 38.66 74.03 18.76 68.7 11.91 75.56"/>
+          				      <polygon id="dark-2" data-name="dark" class="bit cls-3" points="23.28 64.18 43.18 69.51 50.03 62.66 30.14 57.33 23.28 64.18"/>
+          				      <polygon id="light-2" data-name="light" class="bit cls-4" points="34.66 52.8 54.55 58.13 61.41 51.28 41.51 45.95 34.66 52.8"/>
+          				      <polygon id="dark-3" data-name="dark" class="bit cls-3" points="46.28 41.18 66.18 46.51 73.03 39.66 53.13 34.33 46.28 41.18"/>
+          				    </g>
+          				    <polygon id="top" class="cls-3" points="64.93 47.76 81.99 30.7 69.37 18.09 45.04 42.42 64.93 47.76"/>
+          				    <polygon id="tip" class="cls-4" points="0.08 100 6.38 81.08 18.99 93.69 0.08 100"/>
+          				  </g>
+          				  <path id="head-inner" class="cls-5" d="M93.85,16.08A7.95,7.95,0,1,1,84,5.89a7.72,7.72,0,0,0-.44,2.6,8,8,0,0,0,8,8A7.58,7.58,0,0,0,93.85,16.08Z" transform="translate(0.08)"/>
+          				  <path id="head" class="cls-3" d="M96.89,8.77,85,20.7,79.3,15,91.23,3.11A19.26,19.26,0,0,0,67.12,5.63L94.37,32.88A19.26,19.26,0,0,0,96.89,8.77Z" transform="translate(0.08)"/>
+          				  <path id="head-turned" class="cls-3" d="M91.23,3.11A19.26,19.26,0,0,0,67.12,5.63L94.37,32.88A19.26,19.26,0,0,0,96.89,8.77Z" transform="translate(0.08)"/>
+          				</svg>
                   <h2>Fasteners</h2>
                   <a href="#" role="button" class="fill-parent"></a>
               </div>
           </div>
           <div class="col-sm-6 col-md-3">
               <div class="category-icon">
-				<svg id="metal-working" xmlns="http://www.w3.org/2000/svg" width="99" height="85" viewBox="0 0 100 85.72">
-				  <defs>
-				    <style>
+        				<svg id="metal-working" xmlns="http://www.w3.org/2000/svg" width="99" height="85" viewBox="0 0 100 85.72">
+        				  <defs>
+        				    <style>
 
-				    </style>
-				  </defs>
-				  <title>Metal Working</title>
-				  <path id="saw" class="cls-1" d="M81,52.5l11.61-9.89-10.09-.18,8-13-9.65,2.94h0l2.89-11.94.7-2.88-8.28,5.78-.44-5.71L75,8.12,69,16.18,63.14,2.07l-3.29,9.55L50,0l-.19,10.09-13-8,2.94,9.66L24.89,8.17l5.78,8.28L15.46,17.62l8.05,6.08L9.42,29.52l9.53,3.29h0L7.35,42.7l10.08.19h0l-4.95,8-3,4.94,9.65-2.94h0l-.7,2.88L15.52,67.76,23.79,62l.44,5.71L25,77.19l6.09-8,5.81,14.1,3.3-9.54L50,85.32l.18-10.09,13,8-2.95-9.66,14.83,3.58-5.78-8.27L84.54,67.7l-8.05-6.09,14.1-5.81ZM59.46,42.66A9.45,9.45,0,1,1,50,33.2,9.37,9.37,0,0,1,59.46,42.66Z" transform="translate(0 0)"/>
-				  <rect id="base" class="cls-2" y="72.92" width="100" height="12.8"/>
-				  <rect id="border" class="cls-3" y="67.92" width="100" height="6.4"/>
-				  <circle class="spark" cx="85" cy="70" r="1"/>
-				  <circle class="spark" cx="85" cy="70" r="1"/>
-				  <circle class="spark" cx="85" cy="70" r="1"/>
-				  <circle class="spark" cx="85" cy="70" r="1"/>
-				  <circle class="spark" cx="85" cy="70" r="1"/>
-				  <circle class="spark" cx="85" cy="70" r="1"/>
-				</svg>
+        				    </style>
+        				  </defs>
+        				  <title>Metal Working</title>
+        				  <path id="saw" class="cls-1" d="M81,52.5l11.61-9.89-10.09-.18,8-13-9.65,2.94h0l2.89-11.94.7-2.88-8.28,5.78-.44-5.71L75,8.12,69,16.18,63.14,2.07l-3.29,9.55L50,0l-.19,10.09-13-8,2.94,9.66L24.89,8.17l5.78,8.28L15.46,17.62l8.05,6.08L9.42,29.52l9.53,3.29h0L7.35,42.7l10.08.19h0l-4.95,8-3,4.94,9.65-2.94h0l-.7,2.88L15.52,67.76,23.79,62l.44,5.71L25,77.19l6.09-8,5.81,14.1,3.3-9.54L50,85.32l.18-10.09,13,8-2.95-9.66,14.83,3.58-5.78-8.27L84.54,67.7l-8.05-6.09,14.1-5.81ZM59.46,42.66A9.45,9.45,0,1,1,50,33.2,9.37,9.37,0,0,1,59.46,42.66Z" transform="translate(0 0)"/>
+        				  <rect id="base" class="cls-2" y="72.92" width="100" height="12.8"/>
+        				  <rect id="border" class="cls-3" y="67.92" width="100" height="6.4"/>
+        				  <circle class="spark" cx="85" cy="70" r="1"/>
+        				  <circle class="spark" cx="85" cy="70" r="1"/>
+        				  <circle class="spark" cx="85" cy="70" r="1"/>
+        				  <circle class="spark" cx="85" cy="70" r="1"/>
+        				  <circle class="spark" cx="85" cy="70" r="1"/>
+        				  <circle class="spark" cx="85" cy="70" r="1"/>
+        				</svg>
                 <h2>Metal Working</h2>
                 <a href="#" role="button" class="fill-parent"></a>
               </div>
@@ -286,7 +312,8 @@
                     The tapper arrived today - that is truly amazing turn-around time on your guys' part. You guys have really been amazing to deal with - I very much appreciate it, and you will definitely be at the top of my list the next time I'm looking for a tool, fastener, etc!
                   </blockquote>
                 </div>
-              </div>            
+              </div>
+              <a href="#" class="view-more">View More Testimonials</a>
             </div>
           </div>
         </div>
@@ -404,13 +431,9 @@
     <!-- END Footer Area -->
 
     <!-- Scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-    </script>
-    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/flickity.pkgd.min.js"></script>
-    <script src="js/whitehead-scripts.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/whitehead-scripts.min.js"></script>
     <!-- END Scripts -->
 
 </body>
