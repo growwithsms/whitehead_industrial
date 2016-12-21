@@ -764,6 +764,8 @@ footer .white a {
     padding: 0; }
     .product-data ul li:not(:last-child) {
       margin-bottom: .25em; }
+    .product-data ul .green {
+      color: green; }
 
 .product-description-wrap {
   margin-bottom: 2em; }
