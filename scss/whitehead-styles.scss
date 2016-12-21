@@ -113,16 +113,38 @@ h4 {
 /* ==========================================================================
    Forms and Buttons
    ========================================================================== */
-
-.btn {
+.button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn,
+.button {
     border-radius: 0;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.btn-primary {
+.btn-primary,
+.add-to-cart {
     background-color: #FF5722;
     border-color: #FF5722;
+    color: #fff;
 }
 
 .btn-default {
@@ -320,78 +342,7 @@ section h1 {
         color: #999999;
     }
 }
-.product-photo {
-    margin-bottom: 1em;
-}
-.price {
-    font-size: 1.125em;
-    font-weight: 400;
-    color: #72696b;
-    line-height: 1.2;
-    span {
-        font-size: 2em;
-    }
-    &.sale-price {
-        color: red;
-        text-transform: uppercase;
-    }
-    &.regular-price span {
-        text-decoration: line-through;
-    }
-}
-.product-meta-data-wrapper {
-    margin-top: 1em;
-    display: flex;
-    flex-wrap: wrap;
-}
-.product-meta {
-    font-size: .75em;
-    .promo-icons img {
-        margin-right: 1em;
-        margin-bottom: .5em;
-    }
-    .learn-more {
-        display: block;
-        color: #504a4b;
-        &:before {
-            content: "\f05a";
-            font-family: 'FontAwesome';
-            display: inline-block;
-            font-size: 1.25em;
-        }
-    }
-}
-.product-data {
-    background: #EBEBEB;
-    padding: 1em;
-    font-size: .75em;
-    margin-bottom: 1em;
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li:not(:last-child) {
-            margin-bottom: .25em;
-        }
-    }
-}
-.product-description-wrap {
-    .list {
-        column-count: 2;
-        padding: 0;
-        li {
-            break-inside: avoid;
-            margin-left: 2em;
-        }
-    }
-}
-@media (max-width: 767px) {
-    .product-description-wrap {
-        .list {
-            column-count: 1;
-        }
-    }
-}
+
 /* ==========================================================================
    Footer Area
    ========================================================================== */
@@ -809,4 +760,91 @@ footer .white a {
     opacity: 1;
     transform: scale(0) translate(20px, -15px);
     transition: 0 none;
+}
+
+
+/* ==========================================================================
+   Product Page Specific Styles
+   ========================================================================== */
+.product-photo {
+    margin-bottom: 1em;
+}
+.price {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: #72696b;
+    line-height: 1.2;
+    span {
+        font-size: 2em;
+    }
+    &.sale-price {
+        color: red;
+        text-transform: uppercase;
+    }
+    &.regular-price span {
+        text-decoration: line-through;
+    }
+}
+.product-meta-data-wrapper {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-meta {
+    font-size: .75em;
+    .promo-icons img {
+        margin-right: 1em;
+        margin-bottom: .5em;
+    }
+    .learn-more {
+        display: block;
+        color: #504a4b;
+        &:before {
+            content: "\f05a";
+            font-family: 'FontAwesome';
+            display: inline-block;
+            font-size: 1.25em;
+        }
+    }
+}
+.product-data {
+    background: #EBEBEB;
+    padding: 1em;
+    font-size: .75em;
+    margin-bottom: 1em;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li:not(:last-child) {
+            margin-bottom: .25em;
+        }
+    }
+}
+.product-description-wrap {
+    margin-bottom: 2em;
+    .list {
+        column-count: 2;
+        padding: 0;
+        li {
+            break-inside: avoid;
+            margin-left: 2em;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .product-description-wrap {
+        .list {
+            column-count: 1;
+        }
+    }
+}
+
+/* Responsive Scrolling Table */
+section#no-more-tables {
+    overflow: auto;
+    margin-bottom: 2em;
+}
+section#no-more-tables > table {
+    width: 100%;
 }
