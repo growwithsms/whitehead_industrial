@@ -24,7 +24,21 @@ $(function() {
 	    }
 	}
 
-
+	////////////////////////////////
+	// Smooth Scrolling to Anchors
+	////////////////////////////////
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+		    $('html, body').animate({
+		      scrollTop: target.offset().top
+		    }, 1000);
+		    return false;
+		  }
+		}
+	});
 
 	////////////////////////////////
 	// Home Page Carousels
@@ -66,21 +80,34 @@ $(function() {
 		autoPlay: 3500
 	});
 
+	////////////////////////////////
+	// Variable Product Page
+	////////////////////////////////
 
-	////////////////////////////////
-	// Smooth Anchor Scrolling
-	////////////////////////////////
-	$('a[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		  var target = $(this.hash);
-		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		  if (target.length) {
-		    $('html, body').animate({
-		      scrollTop: target.offset().top
-		    }, 1000);
-		    return false;
-		  }
-		}
+	// Calculates Total Quantity on Hand
+	var totalQOH = 0;
+	$('td[data-title="QOH"]').each(function(){
+		totalQOH += Number($(this).text());
 	});
+	$('#quantity-on-hand').text(totalQOH);
+
+	if(totalQOH > 0) {
+		$('#quantity-on-hand').parent().addClass('green');
+	} else {
+		$('#quantity-on-hand').parent().addClass('hidden');
+	}
+
+	// Calculates Total Quantity on Order
+	var totalQOO = 0;
+	$('td[data-title="QOO"]').each(function(){
+		totalQOH += Number($(this).text());
+	});
+	$('#quantity-on-order').text(totalQOO);
+
+	if(totalQOO > 0) {
+		$('#quantity-on-order').parent().addClass('green');
+	} else {
+		$('#quantity-on-order').parent().addClass('hidden');
+	}
 
 });
