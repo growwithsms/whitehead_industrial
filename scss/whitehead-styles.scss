@@ -135,7 +135,10 @@ h4 {
 /* ==========================================================================
    Header Area
    ========================================================================== */
-
+header {
+    background: #fff;
+    box-shadow: 0.342px 0.94px 0px 0px rgba(0, 0, 0, 0.15);
+}
 .courtesy-nav {
     background: #F6F6F6;
     border-bottom: 1px solid #DDDDDD;
@@ -193,7 +196,7 @@ h4 {
 }
 
 .main-nav-wrapper .logo {
-    margin: 1em auto;
+    margin: 1.25em auto;
     display: block;
 }
 
@@ -300,7 +303,95 @@ h4 {
     }
 }
 
-
+/* ==========================================================================
+   Body Area
+   ========================================================================== */
+section h1 {
+    border-bottom: 1px solid #d9d9d9;
+}
+#breadcrumbs {
+    margin-top: 1em;
+    font-size: .75em;
+    color: #999999;
+    i {
+        margin: 0 .5em;
+    }
+    a {
+        color: #999999;
+    }
+}
+.product-photo {
+    margin-bottom: 1em;
+}
+.price {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: #72696b;
+    line-height: 1.2;
+    span {
+        font-size: 2em;
+    }
+    &.sale-price {
+        color: red;
+        text-transform: uppercase;
+    }
+    &.regular-price span {
+        text-decoration: line-through;
+    }
+}
+.product-meta-data-wrapper {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-meta {
+    font-size: .75em;
+    .promo-icons img {
+        margin-right: 1em;
+        margin-bottom: .5em;
+    }
+    .learn-more {
+        display: block;
+        color: #504a4b;
+        &:before {
+            content: "\f05a";
+            font-family: 'FontAwesome';
+            display: inline-block;
+            font-size: 1.25em;
+        }
+    }
+}
+.product-data {
+    background: #EBEBEB;
+    padding: 1em;
+    font-size: .75em;
+    margin-bottom: 1em;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li:not(:last-child) {
+            margin-bottom: .25em;
+        }
+    }
+}
+.product-description-wrap {
+    .list {
+        column-count: 2;
+        padding: 0;
+        li {
+            break-inside: avoid;
+            margin-left: 2em;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .product-description-wrap {
+        .list {
+            column-count: 1;
+        }
+    }
+}
 /* ==========================================================================
    Footer Area
    ========================================================================== */
@@ -569,7 +660,7 @@ footer .white a {
 .category-icon #hand-tools .wrench {
     transform-origin: 76% 21%;
     transform: rotate(0deg) scale(1);
-    transition: transform 500ms cubic-bezier(0.08, 0.76, 0, 1.85);
+    transition: transform 500ms cubic-bezier(0.08, 0.76, 0, 1.2);
 }
 
 .category-icon:hover #hand-tools .wrench {
