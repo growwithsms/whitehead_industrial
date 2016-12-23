@@ -79,8 +79,11 @@ a:hover,
 a:focus {
   color: #FF5722; }
 
+h1 {
+  font-weight: 700; }
+
 h2 {
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase; }
 
 h3 {
